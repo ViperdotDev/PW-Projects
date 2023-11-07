@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-image: url(./assets/background-image.png);
+  background-repeat: no-repeat;
+  background-position: 51% 125%;
+  background-attachment: fixed;
+  user-select: none;
+  background-size: 104vw 74vw;
+  overflow: hidden;
+}
+
+/* remove styling */
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-size: 1.2vw;
+}
+/* Navbar */
+header {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 3.5vw;
+}
+.logo {
+  width: 10vw;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+.btn img {
+  width: 2vw;
+}
+.btn button {
+  background-color: #ed017f;
+  color: #fff;
+  border: none;
+  padding: 0.3vw 0.8vw;
+  font-size: 1.2vw;
+  border-radius: 0.5vw;
+  margin-right: 1.2vw;
+}
+/* man content */
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main h1 {
+  font-size: 4vw;
+  font-weight: bold;
+}
+main p {
+  font-size: 1.3vw;
+  margin-top: 1vw;
+}
+
+.social {
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.social img {
+  width: 2vw;
+}
+
+.content button {
+  margin-top: 1vw;
+}
+
+.apply {
+  background-color: #ed017f;
+  color: #fff;
+  border: none;
+  padding: 0.4vw 0.8vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  margin-right: 1.5vw;
+}
+.loan {
+  background-color: #fff;
+  color: #ed017f;
+  border: 0.15vw solid #ed017f;
+  padding: 0.3vw 0.8vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+.right {
+  position: relative;
+}
+.right button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  background-color: #fff;
+  border: none;
+  padding: 0.5vw 0.8vw;
+  font-size: 1vw;
+  border-radius: 1.5vw;
+  box-shadow: 1px 1px 1.5vw #4d4d4d;
+}
+.right .car-btn {
+  position: absolute;
+  left: 4.5vw;
+}
+.right .house-btn {
+  position: absolute;
+  right: 2vw;
+  top: 8vw;
+}
+.hero-img {
+  width: 55vw;
+  position: relative;
+  left: 3.4vw;
+}
+.right .house-btn img {
+  width: 1.5vw;
+}
+.right .car-btn img {
+  width: 1.5vw;
+}
+.social span {
+  font-size: 1vw;
+}
