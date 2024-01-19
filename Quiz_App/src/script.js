@@ -261,3 +261,7 @@ function handleClick() {
     .removeEventListener('click', handleClick);
 }
 document.querySelector('.q10_option1').addEventListener('click', handleClick);
+
+function restart() {
+  location.reload();
+}
