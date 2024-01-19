@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header
+      class="bg-cyan-600 text-white flex justify-center items-center h-28"
+    >
+      <h1 class="text-6xl font-bold px-12 underline">Quiz App</h1>
+      <p class="text-xl mt-8">Score: <span class="score">00</span></p>
+    </header>
+    <card class="card-1 flex pl-32 mt-12 items-center">
+      <div class="card1">
+        <h1 class="text-xl font-medium">
+          Question 1: What does HTML stand for?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q1_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question1()"
+          >
+            a. HyperText Markup Language
+          </button>
+          <button
+            class="q1_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question1()"
+          >
+            b. High-Level Text Management
+          </button>
+          <button
+            class="q1_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question1()"
+          >
+            c. HyperTransfer Markup Language
+          </button>
+          <button
+            class="q1_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question1()"
+          >
+            d. HomeTool Management Language
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card2 flex pl-32 mt-12 items-center">
+      <div class="card2">
+        <h1 class="text-xl font-medium">
+          Question 2: Which CSS property is used to control the spacing between
+          elements?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q2_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question2()"
+          >
+            a. Margin
+          </button>
+          <button
+            class="q2_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question2()"
+          >
+            b. Padding
+          </button>
+          <button
+            class="q2_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question2()"
+          >
+            c. space-between
+          </button>
+          <button
+            class="q2_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question2()"
+          >
+            d. spacing
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card3 flex pl-32 mt-12 items-center">
+      <div class="card3">
+        <h1 class="text-xl font-medium">
+          Question 3: In JavaScript, what does the DOM stand for?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q3_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question3()"
+          >
+            a. Document Object Model
+          </button>
+          <button
+            class="q3_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question3()"
+          >
+            b. Data Object Model
+          </button>
+          <button
+            class="q3_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question3()"
+          >
+            c. Document Order Model
+          </button>
+          <button
+            class="q3_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question3()"
+          >
+            d. Dynamic Object Model
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card4 flex pl-32 mt-12 items-center">
+      <div class="card4">
+        <h1 class="text-xl font-medium">
+          Question 4: What is the main difference between HTTP GET and HTTP POST
+          requests?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q4_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question4()"
+          >
+            a. GET sends data in the URL, while POST sends it in the body.
+          </button>
+          <button
+            class="q4_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question4()"
+          >
+            b. GET is used for retrieving data, while POST is used for creating
+            or updating data.
+          </button>
+          <button
+            class="q4_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question4()"
+          >
+            c. GET is faster than POST.
+          </button>
+          <button
+            class="q4_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question4()"
+          >
+            d. POST is more secure than GET.
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card5 flex pl-32 mt-12 items-center">
+      <div class="card5">
+        <h1 class="text-xl font-medium">
+          Question 5: How can you make a website responsive for different screen
+          sizes?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q5_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question5()"
+          >
+            a. Use media queries in your CSS.
+          </button>
+          <button
+            class="q5_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question5()"
+          >
+            b. Resize images dynamically.
+          </button>
+          <button
+            class="q5_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question5()"
+          >
+            c. Adjust font sizes with JavaScript.
+          </button>
+          <button
+            class="q5_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question5()"
+          >
+            d. All of the above.
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card6 flex pl-32 mt-12 items-center">
+      <div class="card6">
+        <h1 class="text-xl font-medium">
+          Question 6: What is the purpose of a Content Delivery Network (CDN)?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q6_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question6()"
+          >
+            a. Deliver content faster to users by distributing it across
+            multiple servers.
+          </button>
+          <button
+            class="q6_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question6()"
+          >
+            b. Improve website security by encrypting all data.
+          </button>
+          <button
+            class="q6_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question6()"
+          >
+            c. Track user behavior on the website.
+          </button>
+          <button
+            class="q6_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question6()"
+          >
+            d. Reduce server load by caching static files.
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card7 flex pl-32 mt-12 items-center">
+      <div class="card7">
+        <h1 class="text-xl font-medium">
+          Question 7: What is the benefit of using Web Components?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q7_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question7()"
+          >
+            a. Create reusable and encapsulated UI components.
+          </button>
+          <button
+            class="q7_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question7()"
+          >
+            b. Simplify browser compatibility issues.
+          </button>
+          <button
+            class="q7_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question7()"
+          >
+            c. Improve website performance.
+          </button>
+          <button
+            class="q7_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question7()"
+          >
+            d. All of the above.
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card8 flex pl-32 mt-12 items-center">
+      <div class="card8">
+        <h1 class="text-xl font-medium">
+          Question 8: What is the difference between `document.getElementById` and `document.querySelector` in JavaScript?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q8_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question8()"
+          >
+            a. `getElementById` only works with IDs, while `querySelector` works with any selector.
+          </button>
+          <button
+            class="q8_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question8()"
+          >
+            b.  `querySelector` is slower than `getElementById`.
+          </button>
+          <button
+            class="q8_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question8()"
+          >
+            c. `getElementById` is case-sensitive, while `querySelector` is not.
+          </button>
+          <button
+            class="q8_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question8()"
+          >
+            d. Both methods achieve the same outcome, just written differently.
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card9 flex pl-32 mt-12 items-center">
+      <div class="card9">
+        <h1 class="text-xl font-medium">
+          Question 9: Which tool is used to minify and compress JavaScript code?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q9_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question9()"
+          >
+            a. Webpack
+          </button>
+          <button
+            class="q9_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question9()"
+          >
+            b. Babel
+          </button>
+          <button
+            class="q9_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question9()"
+          >
+            c. UglifyJS
+          </button>
+          <button
+            class="q9_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question9()"
+          >
+            d. Bootstrap
+          </button>
+        </div>
+      </div>
+    </card>
+    <card class="card10 flex pl-32 mt-12 items-center">
+      <div class="card10">
+        <h1 class="text-xl font-medium">
+          Question 10: What is the semantic meaning of the `nav` tag in HTML?
+        </h1>
+        <div
+          class="options flex flex-col text-lg transition-colors duration-400 ease-linear"
+        >
+          <button
+            class="q10_option1 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question10()"
+          >
+            a. Any type of navigation element.
+          </button>
+          <button
+            class="q10_option2 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question10()"
+          >
+            b. Main website navigation bar.
+          </button>
+          <button
+            class="q10_option3 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question10()"
+          >
+            c. Links to external websites
+          </button>
+          <button
+            class="q10_option4 border font-bold border-gray-500 py-2 mt-2 rounded"
+            onclick="question10()"
+          >
+            d. Breadcrumbs navigation path.
+          </button>
+        </div>
+      </div>
+    </card>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
